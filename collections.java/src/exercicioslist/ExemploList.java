@@ -1,7 +1,10 @@
+package exercicioslist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
 public class ExemploList {
@@ -40,7 +43,7 @@ public class ExemploList {
         System.out.println(notas.indexOf(10.0));
 
 
-        System.out.println("substituindo notya pela posicao");
+        System.out.println("substituindo nota pela posicao");
         // Para substituir utilizamos SET (indice , elemento)
         notas.set(0, 49.0); 
         notas.set(1, 48.0);
@@ -81,9 +84,51 @@ public class ExemploList {
         System.out.println("Exibindo a quinta nota adicionada");
         System.out.println(notas.get(4));
 
-        System.out.println("Exiba a menor nota na Lista"+ Collection.min(notas)); 
-        //System.out.println("Exiba a maior nota na Lista"+ Collection.min(notas)); 
+        System.out.println("Exiba a menor nota na Lista: "+ Collections.min(notas)); 
+        System.out.println("Exiba a maior nota na Lista: "+ Collections.min(notas)); 
+        
+        System.out.println("Exiba a soma dos valores: ");
+        Iterator<Double> iterator = notas.iterator();//   Iterator em Java O Iterador é um padrão de projeto 
+        //comportamental que permite a passagem sequencial através de uma estrutura de dados complexa 
+        //sem expor seus detalhes internos. Graças ao Iterator, os clientes 
+        //podem examinar elementos de diferentes coleções de maneira semelhante usando uma única interface iterador.
 
+        Double soma = 0D;
+        while(iterator.hasNext()){// (Tem proximo) ?
+            Double next = iterator.next();
+            soma += next;
+        }
+        System.out.println(notas.toString());// Representação em String do objeto
+
+        System.out.println("Exibindo soma "+ soma);
+
+        System.out.println("Exibindo a media das notas "+ (soma/notas.size()));
+                                                                    // Size retorna inteiro == quantidade de elementos dentro do meu List
+
+        System.out.println("Removendo a nota 49.0: ");
+        // notas.remove(0); remove na posição 0
+        notas.remove(49d);
+        System.out.println(notas);
+
+        System.out.println("Removendo nota na posição 0: ");
+        notas.remove(0);
+
+        System.out.println(notas);
+
+    //    System.out.println("Removendo notas menores que 7");
+   //     Iterator<Double> iterator1 = notas.iterator();
+    // equanto iterator tiver proximo
+        //while(iterator1.hasNext()){
+        //    Double next = iterator.next();
+       //     if(next < 7) iterator.remove();
+     //   }
+        System.out.println(notas);
+
+        System.out.println("Apagando toda a lista: ");
+        notas.clear();
+        System.out.println(notas);
+
+        System.out.println("conferindo se a lista esta vazia: "+ notas.isEmpty());// .isEmpty "Esta vazia"? tipo boolean
 
 
         
