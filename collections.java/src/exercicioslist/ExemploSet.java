@@ -1,4 +1,4 @@
-package colecoessingularidade;
+package exercicioslist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
