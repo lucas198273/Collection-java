@@ -9,6 +9,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import java.util.function.Function;
 
 public class ExercicioAgenda {
     
@@ -61,13 +62,16 @@ public class ExercicioAgenda {
                                       
                                                                    // Exemplo de classe anonima
                                                                    // antes class ComparatorOrdemNumerica 
-                                                        // Agorta: 
-      Set<Map.Entry<Integer,Contato>> set1 = new TreeSet<>(new Comparator<Map.Entry<Integer,Contato>>(){
-        @Override                                           
-        public int compare(Map.Entry<Integer,Contato> count1 , Map.Entry<Integer,Contato> count2 ){
-            return Integer.compare(count1.getValue().getNumero(), count2.getValue().getNumero(), compare)
-        }
-      });
+                                                        // Agora: 
+     // Set<Map.Entry<Integer,Contato>> set1 = new TreeSet<>(new Comparator<Map.Entry<Integer,Contato>>(){
+      //  @Override                                           
+       // public int compare(Map.Entry<Integer,Contato> count1 , Map.Entry<Integer,Contato> count2 ){
+       //     return Integer.compare(count1.getValue().getNumero(), count2.getValue().getNumero() );
+       // }
+    //  });
+      Set<Map.Entry<Integer,Contato>> set1 = new TreeSet<>(Comparator.comparing(new Function<Integer,Contato,Integer>() {
+        
+      }));
   
       
     
