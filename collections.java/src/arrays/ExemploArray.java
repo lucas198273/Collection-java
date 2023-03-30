@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
@@ -10,9 +11,11 @@ import java.util.stream.Collectors;
 
 public class ExemploArray {
     public static void main(String[] args){
-        List<String> numerosAleatorios = Arrays.asList("45","25","84","53","75","74","73");
+        List<String> numerosAleatorios =  Arrays.asList("38","42","42","58","65","77","86","97");
         System.out.println("Imprimindo todos os elementos dessa lista de Strings:  ");
         Class tipo = numerosAleatorios.getClass();
+        
+        
         
         // Lambda
         numerosAleatorios.forEach(s -> System.out.println(s));
@@ -69,17 +72,6 @@ public class ExemploArray {
 
         
 
-        System.out.println("Lista Pares Maiores Que 70");
-        List<Integer> ListaMaiorQue70 = numerosAleatorios.stream()
-        .map(Integer::parseInt)
-        .filter(new Predicate<Integer>(){
-            @Override
-            public boolean test(Integer i){
-                if(i %2 ==0 && i >70) return true;
-                return false;
-            }
-        }).collect(Collectors.toList());
-        System.out.println(ListaMaiorQue70);
 
         
 
@@ -93,19 +85,19 @@ public class ExemploArray {
         
         
        // numerosAleatorios2.stream().forEach(s ->  System.out.println(numerosAleatorios2));
-        numerosAleatorios2.forEach(System.out::println); 
+        numerosAleatorios.forEach(System.out::println); 
 
-        List<Integer> ListaElementosIguais = numerosAleatorios2.stream()
-                .map(Integer::parseInt)
-                .filter(new Predicate<Integer>(){
-                    @Override
-                    public boolean comparando (Integer s,Integer i){
-                        if(s.equals(i))return true;
-                        return false;
-                    }
-                }).collect(Collectors.toList());
-
-        System.out.println(tipo2);
+      //  List<Integer> ListaElementosIguais = numerosAleatorios.stream()
+       //         .map(Integer::parseInt)
+       //         .filter(new Predicate<Integer>(){
+       //             @Override
+       //             public boolean comparando (Integer s,Integer i){
+        //                if(s.equals(i))return true;
+       //                 return false;
+       //             }
+       //         }).collect(Collectors.toList());
+//
+      //  System.out.println(tipo2);
 
 
 

@@ -12,6 +12,9 @@ public class ExemploOrdenaçãoStream {
 
         List<String> numerosAleatorios = Arrays.asList("38","42","42","58","65","77","86","97");
         Class tipo = numerosAleatorios.getClass();
+        numerosAleatorios.stream().map(s -> Integer.parseInt(s));// lambda
+
+       
 
 
 

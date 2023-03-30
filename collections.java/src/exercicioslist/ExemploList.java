@@ -129,8 +129,21 @@ public class ExemploList {
         System.out.println(notas);
 
         System.out.println("conferindo se a lista esta vazia: "+ notas.isEmpty());// .isEmpty "Esta vazia"? tipo boolean
+        
+        
 
+        notas.add(4.0);
+        notas.add(5.0);
+        notas.add(6.0);
+        notas.add(7.0);
+        System.out.println("\n"+notas+"\n");
+        System.out.println("Soma"+soma);
+        
 
         
+        System.out.println("Menor nota: "+Collections.min(notas));
+        System.out.println("Maior nota: "+Collections.max(notas));
+        System.out.println("Exibindo media : "+(soma/notas.size()));
+
     }   
 }

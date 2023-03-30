@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "ExemploArray",
+            "request": "launch",
+            "mainClass": "arrays.ExemploArray",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploOrdenaçãoStream",
+            "request": "launch",
+            "mainClass": "arrays.ExemploOrdenaçãoStream",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploOrdenacaoList",
+            "request": "launch",
+            "mainClass": "exemploordenação.ExemploOrdenacaoList",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "OrdenacaoSet",
+            "request": "launch",
+            "mainClass": "exemploordenação.OrdenacaoSet",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploHashMap",
+            "request": "launch",
+            "mainClass": "exemplosmap.ExemploHashMap",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploOrdenaçãoMap",
+            "request": "launch",
+            "mainClass": "exemplosmap.ExemploOrdenaçãoMap",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ClasseAnonima",
+            "request": "launch",
+            "mainClass": "exemplostream.ClasseAnonima",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExercicioAgenda",
+            "request": "launch",
+            "mainClass": "exercicios.ExercicioAgenda",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploList",
+            "request": "launch",
+            "mainClass": "exercicioslist.ExemploList",
+            "projectName": "Collections_82769db2"
+        },
+        {
+            "type": "java",
+            "name": "ExemploSet",
+            "request": "launch",
+            "mainClass": "exercicioslist.ExemploSet",
+            "projectName": "Collections_82769db2"
+        }
+    ]
+}
